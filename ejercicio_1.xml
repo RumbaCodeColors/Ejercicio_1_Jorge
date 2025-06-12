@@ -2,8 +2,8 @@
 <!DOCTYPE asuntos SYSTEM "ejercicio_1.dtd">
 <asuntos>
     <asunto id_expediente="A123">
-        <finicio>2025-06-11</finicio>
-        <ffin>2025-12-11</ffin>
+        <finicio>2025-06-12</finicio>
+        <ffin>2025-11-01</ffin>
         <estado tipo="archivado"></estado>
         <cliente>
             <Nombre>Jorge Perez</Nombre>
