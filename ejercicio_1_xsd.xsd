@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="asuntos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="asunto">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="finicio" type="xs:string" />
+                            <xs:element name="ffin" type="xs:string" />
+                            <xs:element name="estado">
+                                <xs:complexType>
+                                    <xs:attribute name="tipo" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="cliente" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nombre" type="xs:string" />
+                                        <xs:element name="Direccion" type="xs:string" />
+                                        <xs:element name="dni" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="procurador" minOccurs="1" maxOccurs="3">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Nombre" type="xs:string" />
+                                        <xs:element name="Direccion" type="xs:string" />
+                                        <xs:element name="dni" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id_expediente" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

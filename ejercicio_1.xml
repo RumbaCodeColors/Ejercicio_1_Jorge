@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE asuntos SYSTEM "ejercicio_1.dtd">
+<asuntos>
+    <asunto id_expediente="A123">
+        <finicio>2025-06-11</finicio>
+        <ffin>2025-12-11</ffin>
+        <estado tipo="archivado"></estado>
+        <cliente>
+            <Nombre>Jorge Perez</Nombre>
+            <Direccion>C/ Val 27</Direccion>
+            <dni>12345678A</dni>
+        </cliente>
+        <procurador>
+            <Nombre>Raul Ramirez</Nombre>
+            <Direccion>C/ Argentina 6</Direccion>
+            <dni>12345678B</dni>
+        </procurador>
+     
+    </asunto>  
+</asuntos>

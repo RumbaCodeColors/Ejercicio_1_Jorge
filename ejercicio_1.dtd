@@ -1,0 +1,13 @@
+<!ELEMENT asuntos (asunto)>
+<!ELEMENT asunto (finicio,ffin,estado,cliente,procurador+)>
+<!ATTLIST estado tipo (tramite | finalizado | archivado) #REQUIRED>
+<!ELEMENT finicio (#PCDATA)>
+<!ATTLIST asunto id_expediente ID #REQUIRED>
+<!ELEMENT id_expediente (#PCDATA)>
+<!ELEMENT ffin (#PCDATA)>
+<!ELEMENT estado (#PCDATA)>
+<!ELEMENT cliente (Nombre,Direccion,dni)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Direccion (#PCDATA)>
+<!ELEMENT dni (#PCDATA)>
+<!ELEMENT procurador (Nombre,Direccion,dni)>
